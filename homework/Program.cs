@@ -1,42 +1,42 @@
 ﻿//task1 Задача 1: Напишите программу, которая бесконечно запрашивает целые числа с консоли. Программа завершается при вводе символа ‘q’ или при вводе числа, сумма цифр которого чётная.
 
-// Console.Clear();
-// int sum = 0;
-// int CheckNumberEven(int number) // Метод проверки числа на четность
-// {
-//     int sum = 0;
-//     int digit_length = (int)Math.Log10(number) + 1;
-//     for (int i = digit_length; i >= 0; i--)
-//     {
-//         int first_digit = number / (int)Math.Pow(10, i);
-//         sum = sum + first_digit;
-//         number = number - first_digit * (int)Math.Pow(10, i);
-//         //Console.WriteLine(sum);
-//     }
-//     Console.WriteLine(sum);
-//     return sum;
-// }
-// while (true) // true == true
-// {
-//     Console.Write("Введите текст: ");
-//     string text = Console.ReadLine()!;
-//     if (text == "q")
-//     {
-//         break;
-//     }
-//     /*int sum = 0;*/
-//     int number; // Число или 0 (0 - если в строчке были буквы)
-//     if (int.TryParse(text, out number)) // == true, строчка состоит из цифр
-//     {
+Console.Clear();
+int sum = 0;
+int CheckNumberEven(int number) // Метод проверки числа на четность
+{
+    int sum = 0;
+    int digit_length = (int)Math.Log10(number) + 1;
+    for (int i = digit_length; i >= 0; i--)
+    {
+        int first_digit = number / (int)Math.Pow(10, i);
+        sum = sum + first_digit;
+        number = number - first_digit * (int)Math.Pow(10, i);
+        //Console.WriteLine(sum);
+    }
+    Console.WriteLine(sum);
+    return sum;
+}
+while (true) // true == true
+{
+    Console.Write("Введите текст: ");
+    string text = Console.ReadLine()!;
+    if (text == "q")
+    {
+        break;
+    }
+    /*int sum = 0;*/
+    int number; // Число или 0 (0 - если в строчке были буквы)
+    if (int.TryParse(text, out number)) // == true, строчка состоит из цифр
+    {
 
-//         CheckNumberEven(number);
+        CheckNumberEven(number);
 
-//         if (sum % 2 == 0)
-//         {
-//             break;
-//         }
-//     }
-// }
+        if (sum % 2 == 0)
+        {
+            break;
+        }
+    }
+}
 
 // int sum = 0;
 // int digit_length = (int)Math.Log10(number) + 1;
@@ -109,38 +109,38 @@
 
 //v.2 Решение через печать исходного массива в обратной последовательности.
 
-int[] CreateArray(int size)
-{
-    int[] array = new int[size]; // Создание массива на size элементов
-    for (int i = 0; i < array.Length; i++)
-    {
-        array[i] = new Random().Next(-99, 100); // Заполнение исходного массива
-    }
-    return array;
-}
-void PrintArrayReverse(int[] array)
-{
-    for (int i = array.Length -1; i >= 0; i--)
-    {
-        if (i == array.Length -1)
-        {
-            Console.Write($"Massive reverse: [{array[i]}, ");
-        }
-        else if (i < array.Length -1 && i > 0)
-        {
-            Console.Write($"{array[i]}, ");
-        }
-        else if (i == 0)
-        {
-            Console.Write($"{array[i]}] ");
-        }
-    }
-    return;
-}
-Console.Clear();
-Console.Write("Massive size:\t ");
-int N = int.Parse(Console.ReadLine()!);  //использование Parse вместо Convert
-int[] arr = CreateArray(N);
-Console.WriteLine($"Massive:\t [ {string.Join("; ", arr)} ]");
-PrintArrayReverse(arr);
+// int[] CreateArray(int size)
+// {
+//     int[] array = new int[size]; // Создание массива на size элементов
+//     for (int i = 0; i < array.Length; i++)
+//     {
+//         array[i] = new Random().Next(-99, 100); // Заполнение исходного массива
+//     }
+//     return array;
+// }
+// void PrintArrayReverse(int[] array)
+// {
+//     for (int i = array.Length -1; i >= 0; i--)
+//     {
+//         if (i == array.Length -1)
+//         {
+//             Console.Write($"Massive reverse: [{array[i]}, ");
+//         }
+//         else if (i < array.Length -1 && i > 0)
+//         {
+//             Console.Write($"{array[i]}, ");
+//         }
+//         else if (i == 0)
+//         {
+//             Console.Write($"{array[i]}] ");
+//         }
+//     }
+//     return;
+// }
+// Console.Clear();
+// Console.Write("Massive size:\t ");
+// int N = int.Parse(Console.ReadLine()!);  //использование Parse вместо Convert
+// int[] arr = CreateArray(N);
+// Console.WriteLine($"Massive:\t [ {string.Join("; ", arr)} ]");
+// PrintArrayReverse(arr);
 
