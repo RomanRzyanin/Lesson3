@@ -1,0 +1,15 @@
+C:\Users\79103\OneDrive\Рабочий стол\Geekbrains\01_CSHARP\Lesson3\seminar1\bin\Debug\net8.0\seminar1.exe
+C:\Users\79103\OneDrive\Рабочий стол\Geekbrains\01_CSHARP\Lesson3\seminar1\bin\Debug\net8.0\seminar1.deps.json
+C:\Users\79103\OneDrive\Рабочий стол\Geekbrains\01_CSHARP\Lesson3\seminar1\bin\Debug\net8.0\seminar1.runtimeconfig.json
+C:\Users\79103\OneDrive\Рабочий стол\Geekbrains\01_CSHARP\Lesson3\seminar1\bin\Debug\net8.0\seminar1.dll
+C:\Users\79103\OneDrive\Рабочий стол\Geekbrains\01_CSHARP\Lesson3\seminar1\bin\Debug\net8.0\seminar1.pdb
+C:\Users\79103\OneDrive\Рабочий стол\Geekbrains\01_CSHARP\Lesson3\seminar1\obj\Debug\net8.0\seminar1.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\79103\OneDrive\Рабочий стол\Geekbrains\01_CSHARP\Lesson3\seminar1\obj\Debug\net8.0\seminar1.AssemblyInfoInputs.cache
+C:\Users\79103\OneDrive\Рабочий стол\Geekbrains\01_CSHARP\Lesson3\seminar1\obj\Debug\net8.0\seminar1.AssemblyInfo.cs
+C:\Users\79103\OneDrive\Рабочий стол\Geekbrains\01_CSHARP\Lesson3\seminar1\obj\Debug\net8.0\seminar1.csproj.CoreCompileInputs.cache
+C:\Users\79103\OneDrive\Рабочий стол\Geekbrains\01_CSHARP\Lesson3\seminar1\obj\Debug\net8.0\seminar1.sourcelink.json
+C:\Users\79103\OneDrive\Рабочий стол\Geekbrains\01_CSHARP\Lesson3\seminar1\obj\Debug\net8.0\seminar1.dll
+C:\Users\79103\OneDrive\Рабочий стол\Geekbrains\01_CSHARP\Lesson3\seminar1\obj\Debug\net8.0\refint\seminar1.dll
+C:\Users\79103\OneDrive\Рабочий стол\Geekbrains\01_CSHARP\Lesson3\seminar1\obj\Debug\net8.0\seminar1.pdb
+C:\Users\79103\OneDrive\Рабочий стол\Geekbrains\01_CSHARP\Lesson3\seminar1\obj\Debug\net8.0\seminar1.genruntimeconfig.cache
+C:\Users\79103\OneDrive\Рабочий стол\Geekbrains\01_CSHARP\Lesson3\seminar1\obj\Debug\net8.0\ref\seminar1.dll
