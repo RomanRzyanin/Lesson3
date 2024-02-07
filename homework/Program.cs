@@ -1,21 +1,32 @@
 ﻿//task1 Задача 1: Напишите программу, которая бесконечно запрашивает целые числа с консоли. Программа завершается при вводе символа ‘q’ или при вводе числа, сумма цифр которого чётная.
 
-Console.Clear();
-int sum = 0;
+//v.1 С использованием метода
+
 int CheckNumberEven(int number) // Метод проверки числа на четность
 {
     int sum = 0;
-    int digit_length = (int)Math.Log10(number) + 1;
-    for (int i = digit_length; i >= 0; i--)
+    while (number > 0)
     {
-        int first_digit = number / (int)Math.Pow(10, i);
-        sum = sum + first_digit;
-        number = number - first_digit * (int)Math.Pow(10, i);
-        //Console.WriteLine(sum);
+        sum = sum + number % 10;
+        number = number / 10;
     }
     Console.WriteLine(sum);
     return sum;
+
+    /*int digit_length = (int)Math.Log10(number) + 1;
+    // for (int i = digit_length; i >= 0; i--)
+    // {
+    //     int first_digit = number / (int)Math.Pow(10, i);            Зачем пошел по такому пути? Наверно, чтобы найти проще.
+    //     sum = sum + first_digit;
+    //     number = number - first_digit * (int)Math.Pow(10, i);
+    //     //Console.WriteLine(sum);
+        
+    // }
+    // Console.WriteLine(sum);
+    // return sum;*/
 }
+Console.Clear();
+int sum = 0;
 while (true) // true == true
 {
     Console.Write("Введите текст: ");
@@ -28,24 +39,53 @@ while (true) // true == true
     int number; // Число или 0 (0 - если в строчке были буквы)
     if (int.TryParse(text, out number)) // == true, строчка состоит из цифр
     {
-
         CheckNumberEven(number);
-
-        if (sum % 2 == 0)
+    
+        if (sum % 2 == 0 /*&& sum != 0*/) //Если прописать, что переменная sum не равна 0, то программа работает, за исключение если введен 0. В программе есть ошибка с инициализацие переменной sum!
         {
             break;
         }
     }
+    
 }
 
-// int sum = 0;
-// int digit_length = (int)Math.Log10(number) + 1;
-// for (int i = digit_length; i >= 0; i--)
+//v.2 без использования метода (рабочая версия)
+
+// Console.Clear();
+// while (true) // true == true
+// {
+//     Console.Write("Введите текст: ");
+//     string text = Console.ReadLine()!;
+//     if (text == "q")
 //     {
-//         int first_digit = number / (int)Math.Pow(10, i);
-//         sum = sum + first_digit;
-//         number = number - (first_digit * (int)Math.Pow(10, i));
+//         break;
 //     }
+//     int sum = 0;
+//     int number; // Число или 0 (0 - если в строчке были буквы)
+//     if (int.TryParse(text, out number)) // == true, строчка состоит из цифр
+//     {
+//         while (number > 0)
+//         {
+//             sum = sum + number % 10;
+//             number = number / 10;
+//         }
+
+//         /*int digit_length = (int)Math.Log10(number) + 1;
+//         for (int i = digit_length; i >= 0; i--)
+//         {
+//             int first_digit = number / (int)Math.Pow(10, i);         Зачем пошел по такому пути? Наверно, чтобы найти проще.
+//             sum = sum + first_digit;
+//             number = number - (first_digit * (int)Math.Pow(10, i));
+//         }*/
+
+//         Console.WriteLine(sum); //Вывод числа sum для контроля
+
+//         if (sum % 2 == 0)
+//         {
+//             break;
+//         }
+//     }
+// }
 
 //task2 Задача 2: Задайте массив заполненный случайными трёхзначными числами. Напишите программу, которая покажет количество чётных чисел в массиве.
 
